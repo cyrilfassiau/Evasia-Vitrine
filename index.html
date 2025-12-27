@@ -204,138 +204,23 @@
           <button type="submit">Envoyer</button>
         </form>
       </section>
-      <!-- <section class="travel-form">
-        <div class="formcarry-container" id="travel-form">
-          <h1>
-            Tu veux partir à Bali? Remplis ce formulaire et nous préparerons ta
-            prochaine aventure !
-          </h1>
-          <form id="travelForm" class="form">
-            <span>Nom</span>
-            <input
-              type="text"
-              name="name"
-              placeholder="Nom"
-              required
-              autocomplete="off"
-            />
-            <span>Prénom</span>
-            <input
-              type="text"
-              name="name"
-              placeholder="Prénom"
-              required
-              autocomplete="off"
-            />
-            <span>Adresse email</span>
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              required
-              autocomplete="off"
-            />
-            <span>Date du départ</span>
-            <input
-              type="date"
-              name="date"
-              placeholder="Date du voyage"
-              required
-              autocomplete="off"
-            />
-            <span>Durée du voyage</span>
-            <select autocomplete="off">
-              <option value=""></option>
-              <option value="10">10 jours</option>
-              <option value="20">15 jours</option>
-              <option value="30">20 jours</option>
-            </select>
-            <span>Nombre de voyageurs</span>
-            <input
-              type="number"
-              name="nbre"
-              placeholder="Nombre de voyageurs"
-              min="0"
-              max="100"
-              required
-              autocomplete="off"
-            />
-            <span
-              >Type de voyage (solo, en couple, en famille, entre
-              amis,...)</span
-            >
-            <input
-              type="text"
-              name="type"
-              placeholder="Type de voyage"
-              required
-              autocomplete="off"
-            />
-            <span>Budget par personne hors vols (en euros)</span>
-            <input
-              type="text"
-              name="budget"
-              placeholder="Budget par personnes"
-              required
-              autocomplete="off"
-            />
-            <span>Tes envies pour ce voyage</span>
-            <textarea
-              type="text"
-              name="envies"
-              placeholder="Tes envies (champs libre)"
-              required
-            ></textarea>
-
-            <button type="submit">Envoyer</button>
-            <p
-              id="formSuccess"
-              style="
-                display: none;
-                color: white;
-                font-size: 20px;
-                margin-top: 20px;
-              "
-            >
-              Votre message a bien été envoyé ✔️
-            </p>
-          </form>
-        </div>
-      </section> -->
     </main>
-    <footer></footer>
-    <script>
-      document
-        .getElementById("travelForm")
-        .addEventListener("submit", async function (e) {
-          e.preventDefault(); // Empêche la redirection
+    <footer>
+      <div class="instas">
+        <a href="https://www.instagram.com/celine_nomadsoul/"
+          >@celine_nomadsoul
+        </a>
+        <a href="https://www.instagram.com/traveleasywithginny/"
+          >@traveleasywithginny</a
+        >
+      </div>
+      <div class="names">
+        EVASIA <br />
 
-          const form = e.target;
-          const formData = new FormData(form);
-          const data = Object.fromEntries(formData.entries());
-
-          try {
-            await fetch(
-              "https://formsubmit.co/ajax/cyril.fassiau@hotmail.com",
-              {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                  Accept: "application/json",
-                },
-                body: JSON.stringify(data),
-              }
-            );
-
-            // Affiche le message
-            document.getElementById("formSuccess").style.display = "block";
-
-            // Reset du formulaire
-            form.reset();
-          } catch (error) {
-            console.error("Erreur d'envoi", error);
-          }
-        });
-    </script>
+        Copyright © 2026 <br />Evasia - tous droits réservés
+      </div>
+      
+      </div>
+    </footer>
   </body>
 </html>

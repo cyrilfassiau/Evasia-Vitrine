@@ -4,10 +4,7 @@
   font-weight: normal;
   font-style: normal;
 }
-a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -69,6 +66,17 @@ main > img {
   align-items: center;
   padding-bottom: 30px;
   gap: 30px;
+  animation: fadeInUp 2s ease-out;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Titre */
@@ -98,6 +106,17 @@ main > img {
   min-height: 673px;
 }
 
+@keyframes fadeInSide {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .about_all {
   max-width: 1140px;
   width: 90%;
@@ -117,6 +136,7 @@ main > img {
   flex-shrink: 0;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  animation: fadeInSide 1s ease-out;
 }
 
 .about_text {
@@ -125,6 +145,17 @@ main > img {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  animation: fadeInSide2 1s ease-out;
+}
+@keyframes fadeInSide2 {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .about_center {
@@ -492,9 +523,32 @@ form {
 
 /* FOOTER */
 footer {
-  height: 80px;
+  height: 200px;
+  background-color: rgba(64, 87, 109, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  line-height: 25px;
 }
 
+.names {
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.instas {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-weight: bold;
+  font-size: 1em;
+}
+.instas a {
+  color: rgb(210, 136, 100);
+  text-decoration: none;
+}
 /* ========= RESPONSIVE ========= */
 
 /* === Desktop moyen === */
@@ -750,7 +804,6 @@ footer {
   }
 
   footer {
-    height: 60px;
   }
 
   .formcarry-container {
