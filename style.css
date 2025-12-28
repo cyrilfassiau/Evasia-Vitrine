@@ -422,10 +422,6 @@ main > img {
   margin-top: 16px;
 }
 
-/*=============================================
-    =            Fields           =
-    =============================================*/
-
 .formcarry-container input,
 .formcarry-container textarea,
 .formcarry-container select {
@@ -441,6 +437,7 @@ main > img {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   transition: 125ms background, 125ms color, 125ms box-shadow;
+  resize: none;
 }
 
 .formcarry-container textarea {
