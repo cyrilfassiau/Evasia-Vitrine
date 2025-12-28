@@ -941,7 +941,7 @@ footer {
     right: -100%;
     flex-direction: column;
     background-color: rgb(210, 136, 100);
-    width: 15%;
+    width: 35%;
     height: calc(100vh - 80px);
     justify-content: center;
     align-items: center;
