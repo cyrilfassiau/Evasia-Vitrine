@@ -134,7 +134,8 @@ main > img {
 .about_img {
   width: 50%;
   flex-shrink: 0;
-  border-radius: 20px;
+  border-radius: 50% 50% 52% 48% / 53% 58% 42% 47%;
+
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   animation: fadeInSide 1s ease-out;
 }
@@ -195,7 +196,6 @@ main > img {
 }
 
 .wwd_text {
-  max-width: 765px;
   color: white;
   animation: fade-in linear;
   animation-timeline: view();
@@ -214,21 +214,7 @@ main > img {
   line-height: 1.6;
 }
 
-.wwd_icons {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  width: 800px;
-  margin: auto;
-  gap: 20px;
-  animation: fade-in linear;
-  animation-timeline: view();
-  animation-range-start: cover;
-  animation-range-end: 400px;
-}
-
 .icon1 {
-  flex: 1 1 256px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,16 +222,32 @@ main > img {
   text-align: center;
   color: white;
   gap: 20px;
+  background-color: #a9b79f;
+  width: 250px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.212) 0px 5px 15px;
 }
 
 .icon1 span {
-  font-size: 30px;
+  font-size: 20px;
+}
+
+.explained {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .fa-person-hiking,
 .fa-plane-departure,
 .fa-book {
-  font-size: 70px;
+  font-size: 50px;
 }
 
 /* VOYAGES */
@@ -322,6 +324,8 @@ main > img {
 
   color: white;
   gap: 40px;
+
+  margin: 60px auto;
 }
 
 .contacts_bigtext {
@@ -335,16 +339,24 @@ main > img {
 }
 
 .contacts_smalltext {
-  flex: 1 1 60%;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  padding-top: 15px;
-  line-height: 1.6;
+  line-height: 2;
   animation: fade-in linear;
   animation-timeline: view();
   animation-range-start: cover;
   animation-range-end: 400px;
+}
+
+.contacts_smalltext img {
+  border-radius: 62% 38% 70% 30% / 44% 60% 40% 56%;
+  width: 400px;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contacts_smalltext a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 .contacts_box button {
